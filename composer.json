@@ -1,0 +1,51 @@
+{
+  "name": "kkhay/kkhay",
+  "description": "Official PHP SDK for K Khay Sovereign Crypto Payment Gateway",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "K Khay",
+      "email": "dev@kkhay.com",
+      "homepage": "https://kkhay.com"
+    }
+  ],
+  "homepage": "https://kkhay.com",
+  "keywords": [
+    "kkhay",
+    "crypto",
+    "cryptocurrency",
+    "payments",
+    "payment-gateway",
+    "woocommerce",
+    "wordpress",
+    "laravel",
+    "web3",
+    "usdt",
+    "usdc",
+    "bsc",
+    "polygon",
+    "invoice"
+  ],
+  "require": {
+    "php": ">=8.0",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-hash": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5 || ^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kkhay\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kkhay\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable"
+}
+

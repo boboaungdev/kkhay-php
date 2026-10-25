@@ -11,7 +11,7 @@ class Webhook
      *
      * @param string|array $payload Raw JSON body string or decoded associative array
      * @param string|null $signature The signature header value ('x-kkhay-signature')
-     * @param string $ipnSecret Your merchant IPN Secret Key
+     * @param string $ipnSecret Your gateway IPN Secret Key
      * @return bool True if authentic and untampered
      */
     public static function verifySignature(string|array $payload, ?string $signature, string $ipnSecret): bool
@@ -31,7 +31,7 @@ class Webhook
      *
      * @param string $rawBody The raw HTTP request body string
      * @param string|null $signature The 'x-kkhay-signature' header
-     * @param string $ipnSecret Your merchant IPN Secret Key
+     * @param string $ipnSecret Your gateway IPN Secret Key
      * @return array Decoded webhook event payload
      * @throws SignatureVerificationException If signature does not match
      */
